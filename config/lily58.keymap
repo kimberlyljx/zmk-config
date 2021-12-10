@@ -22,7 +22,7 @@
 //                     |  `  | "["  | LOWER | GUI |  | SPACE | ALT  | "]"  | RAISE |
 			bindings = <
 &kp TAB   &kp N1 &kp N2 &kp N3    &kp N4   &kp N5                     &kp N6   &kp N7   &kp N8    &kp N9  &kp N0   &kp BSPC
-&kp ESC   &kp Q  &kp W  &kp F     &kp P    &kp G                      &kp J    &kp L    &kp U     &kp Y   &kp P    &kp SQT
+&kp ESC   &kp Q  &kp W  &kp F     &kp P    &kp G                      &kp J    &kp L    &kp U     &kp Y   &kp SEMI &kp SQT
 &kp LCTRL &kp A  &kp R  &kp S     &kp T    &kp D                      &kp H    &kp N    &kp E     &kp I   &kp O    &kp ENTER
 &kp LSHFT &kp Z  &kp X  &kp C     &kp V    &kp B  &kp MINUS &kp EQUAL &kp K    &kp M    &kp COMMA &kp DOT &kp FSLH &kp RSHFT
                         &kp GRAVE &kp LBKT &mo 1  &kp LGUI  &kp SPACE &kp RALT &kp RBKT &mo 2
@@ -35,15 +35,15 @@
 // ------------------------------------------------------------------------------------------------------------
 // | BTCLR | BT1 | BT2 |  BT3 |  BT4 |  BT5 |                   |      |       |       |       |       |       |
 // |  F1   |  F2 |  F3 |  F4  |  F5  |  F6  |                   |  F7  |  F8   |  UP   |  F10  |  F11  |  F12  |
-// |   `   |  !  |  @  |  #   |  $   |  %   |                   |  ^   |  LEFT | DOWN  | RIGHT |   )   |   ~   |
-// |       |     |     |      |      |      |        |  |       |      |  _    |  +    |  {    |  "|"  |  "|"  |
-//                     |      |      |      |        |  |       |      |       |       |
+// |       |  !  |  @  |  #   |  $   |  %   |                   |  ^   |  LEFT | DOWN  | RIGHT |   )   |   ~   |
+// |       |     |     |      |      |      |        |  |       |      |  _    |  +    |  {    |  "|"  |  ALT  |
+//                     |      |      |      |        |  |  GUI  |      |       |       |
 			bindings = <
 &bt BT_CLR &bt BT_SEL 0     &bt BT_SEL 1      &bt BT_SEL 2      &bt BT_SEL 3 &bt BT_SEL 4                 &trans    &trans    &trans          &trans     &trans    &trans
 &kp F1     &kp F2           &kp F3            &kp F4            &kp F5       &kp F6                       &kp F7    &kp F8    &kp UP          &kp F10    &kp F11   &kp F12
-&kp GRAVE  &kp EXCL         &kp AT            &kp HASH          &kp DOLLAR   &kp PRCNT                    &kp CARET &kp LEFT  &kp DOWN        &kp RIGHT  &kp RPAR  &kp TILDE
-&trans     &ext_power EP_ON &ext_power EP_OFF &ext_power EP_TOG &trans       &trans    &trans   &trans    &trans    &kp MINUS &kp KP_PLUS     &kp LBRC   &kp PIPE  &kp PIPE
-                                              &trans            &trans       &trans    &trans   &trans    &trans    &trans    &trans
+&tras      &kp EXCL         &kp AT            &kp HASH          &kp DOLLAR   &kp PRCNT                    &kp CARET &kp LEFT  &kp DOWN        &kp RIGHT  &kp RPAR  &kp TILDE
+&trans     &ext_power EP_ON &ext_power EP_OFF &ext_power EP_TOG &trans       &trans    &trans   &trans    &trans    &kp MINUS &kp KP_PLUS     &kp LBRC   &kp PIPE  &kp RALT
+                                              &trans            &trans       &trans    &trans   &kp RGUI  &trans    &trans    &trans
 			>;
 
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
